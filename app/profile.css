@@ -1,0 +1,116 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--main-black);
+    border-radius: 2vw;
+    width: 70vw;
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    box-shadow: 0 0 2vw var(--main-orange);
+}
+
+.profile-container h2 {
+    font-size: 3vw;
+    color: var(--main-orange);
+    padding: 2vw;
+}
+
+.profile-picture {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2vw;
+}
+
+.profile-container textarea,
+.profile-container input[type="text"],
+.profile-container button {
+    width: 50vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: 0.2vw solid var(--light-navy);
+    border-radius: 1vw;
+    background-color: var(--dark-navy);
+    color: var(--main-light);
+    font-size: 1.3vw;
+    outline: none;
+}
+
+.profile-container textarea::placeholder,
+.profile-container input[type="text"]::placeholder {
+    color: var(--main-light);
+}
+
+.profile-container textarea:focus,
+.profile-container input[type="text"]:focus {
+    border-color: var(--light-navy);
+    box-shadow: 0 0 3vw var(--light-navy);
+
+}
+
+.profile-container button {
+    background-color: var(--main-light);
+    color: var(--main-orange);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 0 2vw;
+}
+
+.profile-container button:hover {
+    background-color: var(--main-orange);
+    color: var(--main-light);
+    box-shadow: 0 0 1vw var(--main-orange);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .nav-links a{
+        font-size: 2vh;
+    }
+    a.nav-brand {
+        margin: 1vh auto;
+        font-size: 2.5vh;
+    }
+
+    .profile-container {
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .profile-container h2 {
+        font-size: 3vh;
+    }
+
+    .profile-container img {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .profile-container textarea,
+    .profile-container input[type="text"],
+    .profile-container button{
+        padding: 2vh;
+        width: 40vh;
+        border-radius: 1vh;
+    border: 0.2vh solid var(--light-navy);
+    font-size: 1.7vh;
+        }
+        .profile-container button{
+            padding: 1vh 0;
+        }
+        
+}

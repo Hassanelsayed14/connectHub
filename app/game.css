@@ -1,0 +1,150 @@
+.game-container {
+    color: var(--main-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 2vw;
+    background-color: var(--main-black);
+    border-radius: 2vw;
+    width: 70vw;
+    text-align: center;
+    margin-bottom: 5vw;
+    box-shadow: 0 0 2vw var(--main-orange);
+}
+
+h1 {
+    font-size: 3vw;
+    text-align: center;
+    padding: 2vw;
+    color: var(--main-orange);
+}
+
+.game-container p {
+    padding: 2vw 0 0;
+    font-size: 1.5vw;
+}
+
+form label {
+    font-size: 2vw;
+    display: block;
+    color: var(--main-light);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+}
+
+form input {
+    width: 50vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: 0.2vw solid var(--light-navy);
+    border-radius: 1vw;
+    background-color: var(--dark-navy);
+    color: var(--main-light);
+    font-size: 1.3vw;
+    outline: none;
+}
+
+form input:focus {
+    box-shadow: 0 0 2vw var(--light-navy);
+}
+
+form input::placeholder {
+    color: var(--main-light);
+}
+
+form button {
+    display: block;
+    background-color: var(--main-light);
+    color: var(--main-orange);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+form button:hover {
+    background: var(--main-orange);
+    color: var(--main-light);
+}
+
+.game-response {
+    margin-top: 2vw;
+    font-size: 1vw;
+    padding: 1vw;
+    width: 100%;
+    background-color: var(--navbar-color);
+    border: 0.2vw solid var(--border-color);
+    border-radius: 0.8vw;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: var(--surface-color);
+    padding: 1vw;
+    border-radius: 0.8vw;
+    color: var(--text-secondary);
+}
+
+.game-response h2 {
+    color: var(--main-orange);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .nav-links a{
+        font-size: 2vh;
+    }
+    a.nav-brand {
+        margin: 1vh auto;
+        font-size: 2.5vh;
+    }
+
+    h1 {
+        font-size: 3vh;
+        margin: 2vh auto;
+        }
+
+    .game-container {
+        width: 100%;
+        padding: 2vh;
+    }
+
+    .game-container p,
+    .game-container label {
+        font-size: 2vh;
+    }
+
+    form input {
+        padding: 1vh;
+        border: 0.2vh solid var(--light-navy);
+        font-size: 1.5vh;
+        margin: 1vh auto;
+        border-radius: 1vh;
+    }
+    form button{
+        font-size: 2vh;
+        padding: 1vh 1.5vh;
+        border-radius: 1vh;
+    }
+    .game-response{
+        font-size: 1vh;
+    }
+}

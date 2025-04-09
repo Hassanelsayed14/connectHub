@@ -1,0 +1,150 @@
+.hero{
+    display: flex;
+    margin-top: 2vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+.hero-image img{
+    width: 45vw;
+    min-width: 350px;
+}
+.hero-content{
+    color: var(--main-light);
+    /* width: 50vw; */
+}
+.hero h1{
+    font-size: 4vw;
+}
+.hero p{
+    width: 80%;
+    font-size: 1.1vw;
+}
+.cta-buttons{
+    margin-top: 1vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.cta-buttons a{
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.btn-primary{
+    background-color: var(--main-orange);
+    color: var(--main-light);
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    font-weight: bold;
+}
+.btn-secondary{
+    color: var(--main-light);
+}
+.feature-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-title h3{
+    padding: 1.5vw;
+    font-size: 2vw;
+    color: var(--main-orange);
+}
+hr{
+    display: inline-block;
+    width: 50%;
+    border: none;
+    border-top: 0.5vh solid var(--light-navy);
+}
+.feature-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.feature-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5vw;
+}
+.feature-text h1{
+    color: var(--main-light);
+    font-size: 2.5vw;
+    
+}
+.feature-text p{
+    width: 70%;
+    font-size: 1.2vw;
+    color: var(--main-light);
+}
+.feature-card:nth-child(2) .feature-text{
+    align-items: flex-end;
+    text-align: right;
+    width: 50%;
+}
+.feature-content img{
+    min-width: 350px;
+    width: 30vw;
+}
+@media screen and (max-width: 768px){
+    .navbar a{
+        font-size: 1.5vh;
+    }
+    .navbar .nav-brand{
+        font-size: 2.5vh;
+    }
+    .hero{
+        justify-content: flex-end;
+        padding-left: 2vh;
+        height: fit-content;
+        flex-direction: column-reverse;
+        /* margin-top: 0; */
+        margin-bottom: 5vh;
+        align-items: center;
+    }
+    .hero h1{
+        font-size: 4vh;
+    }
+    .hero p{
+        font-size: 1.7vh;
+    }
+    .cta-buttons{
+        gap: 1.7vh;
+        padding: 2vh 0;
+    }
+    .cta-buttons a{
+        font-size: 2vh;
+        border-radius: 2vw;
+        padding: 2vw;
+    }
+    .hero-image img{
+        width: 90vw;
+    }
+    .feature-title h3{
+        font-size: 3.5vh;
+    }
+    .feature-text{
+        width: 100%;
+        align-items: center;
+    }
+    .feature-text h1{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .feature-text p{
+        width: 90%;
+        font-size: 4vw;
+        text-align: center;
+    }
+    .feature-content img{
+        margin-top: 2vh;
+    }
+    .feature-card:nth-child(2) .feature-text{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,200 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-light);
+    text-align: center;
+    height: 70vh;
+    text-shadow: 0.4vw 0.4vw 1vw var(--main-black);
+}
+
+.hero h1 {
+    padding: 2vw;
+    color: var(--main-orange);
+    font-size: 2.5vw;
+}
+
+.hero p {
+    width: 70%;
+    font-size: 1.5vw;
+}
+
+.hero p span {
+    color: var(--main-orange);
+}
+
+.info-titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.purpose-section .info-text span {
+    color: var(--main-orange);
+}
+
+hr {
+    display: inline-block;
+    flex: 1;
+    border: none;
+    border-top: 0.5vh solid var(--main-orange);
+}
+
+.info-titles h2 {
+    text-align: center;
+    font-size: 2vw;
+    padding: 0 2vw;
+    color: var(--main-light);
+    text-shadow: 0.4vw 0.4vw 1vw var(--main-black);
+}
+
+.info-text {
+    font-size: 1.5vw;
+    color: var(--main-light);
+    text-align: center;
+    padding: 6vw 3vw;
+    text-shadow: 0.4vw 0.4vw 1vw var(--main-black);
+}
+
+.learning-section .info-text ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    list-style-type: none;
+}
+
+.learning-section .info-text ul li h4 {
+    color: var(--main-orange);
+}
+
+.learning-section .info-text ul li {
+    background-color: var(--dark-navy);
+    color: var(--main-light);
+    padding: 2vw 1vw;
+    box-shadow: 0.3vw 0.3vw 0.2vw 0.2vw var(--light-navy);
+    text-shadow: 0.4vw 0.4vw 1vw var(--main-black);
+}
+
+.learning-section .info-text ul li p {
+    font-size: 1.3vw;
+}
+
+.vulnerabilities-section .info-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+}
+
+.vulnerabilities-section .info-text li {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    list-style-type: none;
+    /* padding: 2vw; */
+    font-size: 1.4vw;
+    background-color: var(--dark-navy);
+    color: var(--main-light);
+    padding: 2vw 1vw;
+    /* box-shadow: 3px 2px 2px 2px var(--main-black); */
+    box-shadow: 0.3vw 0.3vw 0.2vw 0.2vw var(--light-navy);
+    text-shadow: 0.4vw 0.4vw 1vw var(--main-black);
+}
+
+.vulnerabilities-section .info-text li h4 {
+    font-size: 1.6vw;
+    color: var(--main-orange);
+    text-align: left;
+}
+
+.important {
+    font-size: 1.2vw;
+    text-align: center;
+    color: var(--main-orange);
+    font-weight: bold;
+    padding: 0 1vw 2vw;
+}
+
+footer {
+    background-color: var(--main-light);
+    text-align: center;
+    height: 5vh;
+}
+
+.future-section .info-text p span {
+    color: var(--main-orange);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar a{
+        font-size: 1.5vh;
+    }
+    .navbar .nav-brand{
+        font-size: 2.5vh;
+    }
+    .hero {
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 4vh;
+    }
+
+    .hero p {
+        padding: 1vh;
+        font-size: 2vh;
+        width: 100%;
+    }
+
+    .info-titles h2 {
+        font-size: 3vh;
+    }
+
+    .purpose-section .info-text p {
+        font-size: 2vh;
+        padding: 2vh 0;
+    }
+
+    .learning-section .info-text ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vh;
+    }
+
+    .learning-section .info-text ul li {
+        padding: 2vh 0;
+    box-shadow: 0.3vh 0.3vh 0.2vh 0.2vh var(--light-navy);
+
+    }
+
+    .learning-section .info-text ul li h4 {
+        font-size: 2.2vh;
+    }
+
+    .learning-section .info-text ul li p {
+        font-size: 1.8vh;
+    }
+
+    .vulnerabilities-section .info-text {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .vulnerabilities-section .info-text li {
+        font-size: 1.8vh;
+        justify-content: space-between;
+        padding: 4vh 2vh;
+        box-shadow: 0.3vh 0.3vh 0.2vh 0.2vh var(--light-navy);
+    }
+
+    .vulnerabilities-section .info-text li h4 {
+        font-size: 2.2vh
+    }
+
+    .important{
+        font-size: 1.6vh;
+        padding: 2vh;
+    }
+
+    .future-section .info-text p {
+        font-size: 2vh;
+    }
+}

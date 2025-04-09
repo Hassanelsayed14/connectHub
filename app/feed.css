@@ -1,0 +1,81 @@
+/* styles files for feed.php */
+.feed {
+    color: var(--main-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+}
+
+h1 {
+    color: var(--main-orange);
+    padding: 2vw;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.post h3 {
+    display: inline-block;
+    color: var(--main-orange);
+    font-size: 2vw;
+}
+
+.post {
+    padding: 2vw;
+    border-top: 0.2vw solid var(--main-orange);
+    border-radius: 2vw;
+}
+
+#post-date {
+    font-size: 1vw;
+}
+
+.post p {
+    font-size: 1.8vw;
+    padding: 1vw;
+}
+
+.post p::before {
+    content: '❝ ';
+    color: var(--main-orange);
+}
+
+.post p::after {
+    content: ' ❞';
+    color: var(--main-orange);
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar .nav-links a{
+        font-size: 2vh;
+    }
+    a.nav-brand {
+        margin: 1vh auto;
+        font-size: 2.5vh;
+    }
+    h1{
+        font-size: 4vh;
+        padding: 2vh;
+    }
+    .post{
+        padding: 3vh 2vh;
+    border-top: 0.2vh solid var(--main-orange);
+    border-radius: 2vh;
+    }
+    .post h3{
+        font-size: 2vh;
+    }
+    #post-date{
+        font-size: 1vh;
+    }
+    .post p{
+        font-size: 1.8vh;
+    }
+}

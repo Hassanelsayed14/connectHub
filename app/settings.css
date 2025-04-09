@@ -1,0 +1,120 @@
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70vw;
+    background-color: var(--main-black);
+    border-radius: 2vw;
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 2vw 0;
+    box-shadow: 0 0 2vw var(--main-orange);
+}
+
+.settings-container h2 {
+    color: var(--main-orange);
+    padding: 2vw;
+    font-size: 3vw;
+}
+
+.settings-container input,
+.settings-container textarea,
+.settings-container button {
+    width: 50vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: 0.2vw solid var(--light-navy);
+    border-radius: 1vw;
+    background-color: var(--dark-navy);
+    color: var(--main-light);
+    font-size: 1.3vw;
+    outline: none;
+}
+
+.settings-container input:focus,
+.settings-container textarea:focus {
+    border-color: var(--light-navy);
+    box-shadow: 0 0 3vw var(--light-navy);
+}
+
+.settings-container button {
+    background-color: var(--main-light);
+    color: var(--main-orange);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 0 2vw;
+}
+
+.settings-container textarea::placeholder,
+.settings-container input::placeholder {
+    color: var(--main-light);
+}
+
+.profile-picture {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2vw;
+}
+
+.message {
+    color: green;
+    margin: 1.5vw 0;
+}
+
+.error {
+    color: red;
+    margin: 1.5vw 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .nav-links a{
+        font-size: 2vh;
+    }
+    a.nav-brand {
+        margin: 1vh auto;
+        font-size: 2.5vh;
+    }
+
+    .settings-container {
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .settings-container h2 {
+        font-size: 3vh;
+    }
+
+    .profile-picture {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .settings-container textarea,
+    .settings-container input,
+    .settings-container button {
+        padding: 2vh;
+        width: 40vh;
+        border-radius: 1vh;
+        border: 0.2vh solid var(--light-navy);
+        font-size: 1.7vh;
+    }
+    .settings-container button{
+        padding: 1vh 0;
+        margin: 2vh;
+    }
+}
